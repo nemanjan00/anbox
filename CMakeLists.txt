@@ -94,9 +94,9 @@ endif()
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DEGL_NO_X11")
 
-if((Protobuf_VERSION GREATER "3.7") OR (Protobuf_VERSION EQUAL "3.7"))
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DUSE_PROTOBUF_CALLBACK_HEADER")
-endif()
+#if((Protobuf_VERSION GREATER "3.7") OR (Protobuf_VERSION EQUAL "3.7"))
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DUSE_PROTOBUF_CALLBACK_HEADER")
+#endif()
 
 #####################################################################
 # Enable code coverage calculation with gcov/gcovr/lcov
